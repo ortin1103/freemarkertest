@@ -13,7 +13,6 @@
         <th>Random long</th>
     </tr>
 <#list table as s>
-
     <tr>
         <th>${s_index+1}</th>
         <th>${s.time}</th>

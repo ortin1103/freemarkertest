@@ -12,11 +12,11 @@ import java.util.Map;
 @RequestMapping("/")
 public class ColumnController {
     @Autowired
-    Column column;
+    TableService tableService;
     @RequestMapping(value = "tables",method = RequestMethod.GET)
     public String getTables(Map<String, List<Column>> model){
 
-        model.put("table",column.add100Columns());
+        model.put("table",tableService.get100Columns());
 
         return "table";
     }

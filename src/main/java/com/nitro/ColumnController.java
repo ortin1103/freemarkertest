@@ -11,6 +11,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/")
 public class ColumnController {
+
     @Autowired
     TableService tableService;
     @RequestMapping(value = "tables",method = RequestMethod.GET)

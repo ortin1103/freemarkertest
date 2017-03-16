@@ -1,5 +1,6 @@
 package com.nitro;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -8,7 +9,8 @@ import java.util.List;
 import java.util.Random;
 
 @Service
-public class TableServiceImp  implements TableService {
+@Qualifier("for")
+public class TableServiceImpFor implements TableService {
 
     @Override
     public List<Column> get100Columns() {

@@ -1,6 +1,7 @@
 package com.nitro;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -8,8 +9,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-@Service
-@Qualifier("while")
 public class TableServiceImplWhile implements TableService {
 
 
